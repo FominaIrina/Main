@@ -17,7 +17,7 @@ class SimplePlanner(QMainWindow):
         if self.do_paint:
             qp = QPainter()
             qp.begin(self)
-            self.draw()
+            self.draw(qp)
             qp.end()
 
     def draw(self, qp):
